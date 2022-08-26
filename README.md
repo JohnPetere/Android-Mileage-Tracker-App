@@ -1,6 +1,6 @@
 # Android Mileage Tracker
 
-> I created this app in my Android class at nait. I'm working on adding firebase, a better UI, Downloadable JSON file, I hope to have a much better polished version!
+> I created this app in my Android class at nait. I'm working on adding firebase, a better UI, Downloadable JSON file, I hope to have a much better polished version! Check out the orginal version in the different branches
 
 ## TO DO
  - [ ] Go through code, again
