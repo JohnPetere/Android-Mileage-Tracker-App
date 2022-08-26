@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MileagActvities.MileageMenuActivity">
+
+    <FrameLayout
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="425dp">
+
+        <ListView
+            android:id="@+id/mileage_list_view_MileageMenu_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/add_fuel_record_button_mmileage_menu_actvity"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="50dp"
+            android:onClick="goToAddMileageButtonOnClick"
+            android:background="@drawable/layout_butons"
+
+            android:text="Add Fuel Record" />
+
+
+        <Switch
+            android:id="@+id/metric_imperial_switch_view_mileage_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imperial?"
+            android:layout_gravity="center_horizontal"/>
+
+    </FrameLayout>
+
+</FrameLayout>

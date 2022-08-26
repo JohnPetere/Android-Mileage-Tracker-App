@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VehicleActivities.AddEditVehicleActivity">
+
+  <TextView
+      android:id="@+id/add_edit_text_title_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="30dp"
+
+
+      android:gravity="center_horizontal"
+      android:text="Add Vehicle" />
+  <LinearLayout
+      android:layout_marginTop="50dp"
+      android:id="@+id/textboxes_linear_layout_right_box"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/odometer_add_edit_edittext"
+        android:layout_width="2in"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="Enter Inital Odometer"
+        android:inputType="numberDecimal"
+        android:maxLength="8" />
+
+
+    <EditText
+
+        android:id="@+id/year_add_edit_edittext"
+        android:layout_width="2in"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="Enter Year"
+        android:inputType="number"
+        android:maxLength="4" />
+
+
+    <EditText
+        android:id="@+id/make_add_edit_EditText"
+        android:layout_width="2in"
+        android:layout_height="80dp"
+
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="Enter Make of Car EG: Nissain"
+        android:inputType="textPersonName" />
+    <EditText
+
+        android:id="@+id/model_add_edit_Edittext"
+        android:layout_width="2in"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="Enter Model of Car: Ex: Altima"
+        android:inputType="textPersonName"
+        android:text="" />
+
+
+    <EditText
+
+        android:id="@+id/trim_add_edit_EditText"
+        android:layout_width="2in"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Enter Trim EX: 2.5s"
+        android:inputType="textPersonName" />
+
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/create_car_button_add_edit_button_vehicle"
+      android:layout_width="250dp"
+      android:layout_height="100dp"
+
+      android:layout_centerHorizontal="true"
+     android:layout_below="@id/textboxes_linear_layout_right_box"
+      android:onClick="addVehicleClick"
+      android:text="Add Vehicle"
+      android:background="@drawable/layout_butons"
+      />
+  <Button
+      android:id="@+id/update_car_button_activity_add_edit_vehicle"
+      android:layout_width="250dp"
+      android:layout_height="100dp"
+
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/textboxes_linear_layout_right_box"
+
+      android:text="Saves Changes"
+      android:onClick="updateVehicleOnClick"
+      android:background="@drawable/layout_butons"/>
+  <Button
+      android:id="@+id/delete_car_button_activity_add_edit_vehicle"
+      android:layout_width="250dp"
+      android:layout_height="100dp"
+
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/update_car_button_activity_add_edit_vehicle"
+
+      android:text="DELETE VEHICLE"
+      android:onClick="onClickDeleteVehicle"
+
+      android:backgroundTint="#F60000"/>
+</RelativeLayout>

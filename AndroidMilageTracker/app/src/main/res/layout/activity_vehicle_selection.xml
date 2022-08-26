@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/layout_bg"
+    android:orientation="vertical"
+    tools:context=".VehicleActivities.VehicleSelectionActivity">
+
+
+
+    <ListView
+        android:id="@+id/vehicles_listView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+
+        android:background="@color/cosmic_latte"
+        android:visibility="visible" />
+        <Button
+
+            android:id="@+id/if_vehicles_vehicle_selection_add_vehicle_button"
+            android:layout_width="250dp"
+
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+            android:layout_below="@id/vehicles_listView"
+            android:background="@drawable/layout_butons"
+            android:onClick="addVehicleStart"
+            android:text="Add Vehicle" />
+        <Button
+        android:visibility="gone"
+        android:id="@+id/if_no_vehicles_vehicle_selection_add_vehicle_button"
+        android:layout_width="250dp"
+        android:onClick="addVehicleStart"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/layout_butons"
+        android:text="Add Vehicle" />
+
+</RelativeLayout>

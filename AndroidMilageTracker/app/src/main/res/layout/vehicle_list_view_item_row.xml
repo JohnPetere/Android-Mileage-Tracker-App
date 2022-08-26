@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:id="@+id/listView_row_vehicle">
+
+    <TextView
+        android:id="@+id/vehicle_name_listview_item_textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="2008 DOdge Durange Sport"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+
+        android:background="@color/bright_navy_blue"/>
+
+</RelativeLayout>

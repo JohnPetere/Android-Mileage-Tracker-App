@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:clickable="false"
+    android:gravity="center">
+
+    <TextView android:clickable="false"
+        android:id="@+id/mileage_list_item_date_row"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@color/bright_navy_blue"
+        android:textSize="18dp"
+
+        android:gravity="center"
+        android:text="July 5 2021" />
+
+    <TextView android:clickable="false"
+        android:id="@+id/mileage_list_item_liters"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:text="20 L"
+        android:background="@color/bright_navy_blue"
+        android:textSize="18dp"
+        android:gravity="center"/>
+
+    <TextView android:clickable="false"
+        android:id="@+id/mileage_list_item_distance"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:text="30 Km"
+        android:background="@color/bright_navy_blue"
+        android:textSize="18dp"
+        android:gravity="center"/>
+
+    <TextView android:clickable="false"
+        android:gravity="center"
+        android:id="@+id/mileage_list_item_mileage"
+        android:layout_width="60dp"
+        android:textSize="18dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#3F8FA5"
+        android:text="20.55 L/100 Km" />
+</LinearLayout>

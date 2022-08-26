@@ -1,0 +1,2 @@
+rootProject.name = "Android Milage Tracker"
+include ':app'

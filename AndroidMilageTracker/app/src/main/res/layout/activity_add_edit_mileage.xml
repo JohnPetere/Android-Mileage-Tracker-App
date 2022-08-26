@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MileagActvities.AddEdiMileagetActivity">
+
+    <TextView
+        android:id="@+id/add_edit_text_title_textview_mileage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Add Mileage"
+
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <RelativeLayout
+
+        android:id="@+id/input_box_main"
+        android:layout_width="400dp"
+        android:layout_height="375dp"
+        android:layout_below="@id/add_edit_text_title_textview_mileage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="left">
+        <LinearLayout
+
+            android:id="@+id/mileage_input_boxes_left_box"
+            android:layout_width="175dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+
+                android:id="@+id/gas_filled_Edit_text_Mileage"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Gas Filled"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <EditText
+                android:id="@+id/distance_EditText_mileage"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Distance(Km)"
+                android:inputType="numberDecimal"
+                android:maxLength="8" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:ems="10"
+
+                android:gravity="center"
+                android:hint="Enter Date(optional)"
+                android:inputType="date" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:onClick="addCurrentLocationOnClock"
+                android:layout_height="wrap_content"
+                android:text="Add Current Loacation(optional)" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/textboxes_linear_layout_right_box"
+            android:layout_width="175dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+
+            android:foregroundGravity="center_vertical"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/current_vehicle_Add_edit_mileage_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:ems="10"
+                android:text="2002 GMC Sierra LT" />
+
+
+            <EditText
+                android:id="@+id/updated_Odometer_Add_Edit_Mileage_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="New ODOM(optional)"
+                android:inputType="numberDecimal"
+                android:maxLength="8" />
+
+            <EditText
+                android:id="@+id/add_edit_mileaage_note_edit_Text"
+                android:layout_width="match_parent"
+
+                android:layout_height="80dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Note(optional)"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/current_location_Add_edit_mileage_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:ems="10"
+                android:text="No Loaction Selected" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/add_mileage_button_mileage_view"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/input_box_main"
+        android:onClick="AddMileageOnClick"
+        android:text="Add Record"
+        android:background="@drawable/layout_butons"
+        />
+    <Button
+
+        android:id="@+id/update_mileage_Button_Mileaege_view"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/input_box_main"
+
+        android:text="Saves Changes"
+        android:onClick="updateMileageOnClick"
+        android:background="@drawable/layout_butons"/>
+
+    <Button
+        android:id="@+id/delete_mileage_Button_Mileaege_view"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/update_mileage_Button_Mileaege_view"
+
+        android:text="DELETE"
+        android:onClick="onClickDeleteMileage"
+
+        android:backgroundTint="#F60000"/>
+    <Button
+
+        android:id="@+id/back_to_Mileage_menu_button_Add_Edit_mileage"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/delete_mileage_Button_Mileaege_view"
+
+        android:text="Back"
+        android:onClick="onClickBackToViewButton"
+        android:background="@drawable/layout_butons"/>
+
+
+
+</RelativeLayout>
